@@ -261,7 +261,7 @@ figure figcaption {
     letter-spacing: 0.1rem;
 }
 
-/* ── Ajustes gráficos ── */
+/* ── Ajustes para los Gráficos ── */
 .chart-wrap {
     position: relative;
     height: 400px; /* ajusta el alto que prefieras */
@@ -288,6 +288,14 @@ figure figcaption {
     .grafico-par {
         flex-direction: column;
     }
+}
+
+
+/* ── Ajustes para los SVG ── */
+figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* ── <!-- Tabla dinámica con buscador --> ── */
