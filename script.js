@@ -1,5 +1,5 @@
 // ── Gráfico 1 ─────────────
-
+    // ── IMAGEN SVG EN HTML ─────────────
 
 // ── Gráfico 2 ─────────────
   // ── Electivos IyS ─────────────
