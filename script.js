@@ -3,12 +3,106 @@
 
 // ── Gráfico 2 ─────────────
 
-
 // ── Gráfico 3 ─────────────
 
 
 // ── Gráfico 4 ─────────────
+    // ── Electivos IyS ─────────────
+(function () {
+    const ctx = document.getElementById('electivosBarChart');
+    const labels = ['Comunicación y Estrategia', 'Ciencia y Tecnología', 'Morfología y Técnica'];
+    const obligatorio      = [4, 4, 4];
+    const electivoMencion  = [15, 31, 17];
+    const electivoAmbas    = [30, 9, 11];
+    const totales = labels.map((_, i) => obligatorio[i] + electivoMencion[i] + electivoAmbas[i]);
 
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [
+                { label: 'Obligatorio', data: obligatorio, backgroundColor: '#9c9c9c' },
+                { label: 'Electivo Mención', data: electivoMencion, backgroundColor: '#3266ad' },
+                { label: 'Electivo de Ambas Menciones', data: electivoAmbas, backgroundColor: '#1d9e75' }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                x: { stacked: true },
+                y: {
+                    stacked: true,
+                    beginAtZero: true,
+                    max: 70,
+                    title: { display: true, text: 'Cantidad de electivos' }
+                }
+            },
+            plugins: {
+                legend: { position: 'top' },
+                tooltip: {
+                    callbacks: {
+                        label: function (context) {
+                            return context.dataset.label + ': ' + context.parsed.y;
+                        },
+                        footer: function (items) {
+                            const idx = items[0].dataIndex;
+                            return 'Total: ' + totales[idx];
+                        }
+                    }
+                }
+            }
+        }
+    });
+})();
+
+    // ── Electivos VyM ─────────────
+(function () {
+    const ctx = document.getElementById('electivosBarChart2');
+    const labels = ['Comunicación y Estrategia', 'Ciencia y Tecnología', 'Morfología y Técnica'];
+    const obligatorio      = [4, 4, 4];
+    const electivoMencion  = [28, 13, 18];
+    const electivoAmbas    = [30, 9, 11];
+    const totales = labels.map((_, i) => obligatorio[i] + electivoMencion[i] + electivoAmbas[i]);
+
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [
+                { label: 'Obligatorio', data: obligatorio, backgroundColor: '#9c9c9c' },
+                { label: 'Electivo Mención', data: electivoMencion, backgroundColor: '#3266ad' },
+                { label: 'Electivo de Ambas Menciones', data: electivoAmbas, backgroundColor: '#1d9e75' }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                x: { stacked: true },
+                y: {
+                    stacked: true,
+                    beginAtZero: true,
+                    title: { display: true, text: 'Cantidad de electivos' }
+                }
+            },
+            plugins: {
+                legend: { position: 'top' },
+                tooltip: {
+                    callbacks: {
+                        label: function (context) {
+                            return context.dataset.label + ': ' + context.parsed.y;
+                        },
+                        footer: function (items) {
+                            const idx = items[0].dataIndex;
+                            return 'Total: ' + totales[idx];
+                        }
+                    }
+                }
+            }
+        }
+    });
+})();
 
 // ── Tabla dinámica con buscador ───────────────────────────────────────
 
