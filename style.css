@@ -261,6 +261,35 @@ figure figcaption {
     letter-spacing: 0.1rem;
 }
 
+/* ── Ajustes gráficos ── */
+.chart-wrap {
+    position: relative;
+    height: 400px; /* ajusta el alto que prefieras */
+}
+
+.chart-wrap canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.grafico-par {
+    display: flex;
+    gap: 1.5rem;
+    margin: 2rem -1.5rem;   /* el "breakout" ahora lo maneja el contenedor */
+}
+
+.grafico-par figure {
+    flex: 1;
+    min-width: 0;   /* evita que el canvas desborde el flex item */
+    margin: 0;      /* ya no necesita su propio margen negativo */
+}
+
+@media (max-width: 700px) {
+    .grafico-par {
+        flex-direction: column;
+    }
+}
+
 /* ── <!-- Tabla dinámica con buscador --> ── */
 
 #contenedordetabla input {
