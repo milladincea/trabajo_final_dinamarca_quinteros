@@ -2,12 +2,7 @@
 
 
 // ── Gráfico 2 ─────────────
-
-// ── Gráfico 3 ─────────────
-
-
-// ── Gráfico 4 ─────────────
-    // ── Electivos IyS ─────────────
+  // ── Electivos IyS ─────────────
 (function () {
     const ctx = document.getElementById('electivosBarChart');
     const labels = ['Comunicación y Estrategia', 'Ciencia y Tecnología', 'Morfología y Técnica'];
@@ -103,6 +98,11 @@
         }
     });
 })();
+
+// ── Gráfico 3 ─────────────
+
+
+// ── Gráfico 4 ─────────────
 
 // ── Tabla dinámica con buscador ───────────────────────────────────────
 
