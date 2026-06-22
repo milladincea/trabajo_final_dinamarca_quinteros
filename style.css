@@ -203,6 +203,7 @@ p {
     font-family: var(--serif);
     color: var(--color-text);
     margin: 1.2rem 0;
+    text-align: justify
 }
 
 p small {
@@ -298,48 +299,221 @@ figure img {
     display: block;
 }
 
-/* ── <!-- Tabla dinámica con buscador --> ── */
+/* ── Buscador de electivos (Prueba_Buscador_4) ── */
 
-#contenedordetabla input {
-    border: 1px solid var(--border);
-    padding: 0.5rem 1rem;
-    font-family: var(--sans);
-    font-size: 0.875rem;
-    color: var(--color-text);
-    outline: none;
-    margin-bottom: 1rem;
-    width: 100%;
-    display: block;
+:root {
+    --color-oscuro-bus: #87bba2;
+    --color-iluminado-bus: #d0e1cb;
+    --color-iluminadisimo-bus: #f1e379;
 }
 
-#contenedordetabla input::placeholder {
-    color: var(--color-muted);
-}
-
-#contenedordetabla input:focus {
-    border-color: var(--accent);
-}
-
-#contenedordetabla {
-    overflow-x: auto;
-    font-size: 0.9rem;
-    margin: 2rem 0;
-}
-
-#contenedordetabla table {
-    width: 100%;
-    border-collapse: collapse;
+#planificador {
+    border: 1px solid var(--color-iluminado-bus);
+    padding: 1.5rem;
+    margin-bottom: 2.5rem;
     text-align: left;
-    font-family: var(--sans);
 }
 
-#contenedordetabla thead {
+.paso-titulo {
+    font-size: 0.95rem;
+    font-family: var(--sans);
+    color: var(--color-text);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.menciones-btns {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.btn-mencion {
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    padding: 0.45rem 1.1rem;
+    border: 1px solid var(--accent);
+    background: transparent;
+    color: var(--accent);
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+}
+
+.btn-mencion:hover { background: var(--color-iluminado-bus); }
+
+.btn-mencion.activo {
     background: var(--accent);
     color: white;
 }
 
-#contenedordetabla td,
-#contenedordetabla th {
+#contenedor-tabla-plan { overflow-x: auto; margin-bottom: 1.5rem; }
+
+#tabla-plan {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.82rem;
+    font-family: var(--sans);
+}
+
+#tabla-plan thead th {
+    background: var(--accent);
+    color: white;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid var(--accent);
+    font-weight: 400;
+    white-space: nowrap;
+    cursor: default;
+    user-select: none;
+}
+
+#tabla-plan thead th.col-arrastrable { cursor: grab; }
+#tabla-plan thead th.col-arrastrable:active { cursor: grabbing; }
+
+#tabla-plan thead th.dragging-over {
+    outline: 2px dashed var(--color-iluminadisimo-bus);
+    outline-offset: -2px;
+}
+
+#tabla-plan thead th .col-num {
+    display: inline-block;
+    background: rgba(255,255,255,0.18);
+    font-size: 0.68rem;
+    padding: 0 0.3rem;
+    margin-right: 0.4rem;
+}
+
+#tabla-plan tbody td {
+    border: 1px solid var(--color-iluminado-bus);
+    padding: 0.6rem 0.75rem;
+    vertical-align: top;
+}
+
+#tabla-plan .fila-troncal td {
+    background: var(--color-iluminadisimo-bus);
+    color: #382620;
+    font-weight: 600;
+}
+
+#tabla-plan .fila-electivo td {
+    background: white;
+    font-style: italic;
+    color: var(--color-oscuro-bus);
+    font-weight: 800;
+}
+
+#tabla-plan .celda-fija {
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--color-iluminado-bus);
+    width: 2.5rem;
+    min-width: 2.5rem;
+}
+
+#tabla-plan td.celda-vacia {
+    color: var(--color-iluminado-bus);
+    font-style: normal;
+    font-size: 0.78rem;
+}
+
+.btn-quitar {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--accent);
+    font-size: 0.9rem;
+    padding: 0 0.3rem;
+    opacity: 0.5;
+    transition: opacity 0.15s;
+}
+.btn-quitar:hover { opacity: 1; }
+
+#estado-vacio {
+    text-align: left;
+    color: var(--color-oscuro-bus);
+    font-size: 0.82rem;
+    padding: 1.5rem 0 0.5rem;
+    font-family: var(--sans);
+}
+
+#instruccion-paso2 {
+    font-size: 0.78rem;
+    color: var(--color-oscuro-bus);
+    margin-bottom: 1rem;
+    font-family: var(--sans);
+    display: none;
+}
+
+.drag-handle {
+    display: inline-block;
+    margin-right: 0.4rem;
+    opacity: 0.4;
+    font-size: 0.75rem;
+}
+
+table#tabla-buscador {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-bottom: 3rem;
+    font-family: var(--sans);
+}
+
+table#tabla-buscador thead {
+    background: var(--color-iluminadisimo-bus);
+    color: var(--color-muted);
+}
+
+table#tabla-buscador td,
+table#tabla-buscador th {
     border: 1px solid var(--border);
-    padding: 0.6rem;
+    padding: 0.75rem;
+}
+
+table#tabla-buscador td:nth-child(2) {
+    color: var(--color-oscuro-bus);
+    font-weight: 800;
+}
+
+table#tabla-buscador td:nth-child(3) { font-style: italic; }
+
+.btn-agregar {
+    font-family: var(--sans);
+    font-size: 0.75rem;
+    padding: 0.25rem 0.6rem;
+    border: 1px solid var(--color-oscuro-bus);
+    background: transparent;
+    color: var(--color-oscuro-bus);
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+    white-space: nowrap;
+}
+
+.btn-agregar:hover { background: var(--color-oscuro-bus); color: white; }
+.btn-agregar:disabled { opacity: 0.3; cursor: not-allowed; }
+
+.btn-agregar.ya-agregado {
+    border-color: var(--color-iluminadisimo-bus);
+    color: var(--color-iluminadisimo-bus);
+}
+
+.btn-agregar.no-mencion {
+    border-color: var(--color-iluminado-bus);
+    color: var(--color-iluminado-bus);
+}
+
+.subtitulo-area {
+    display: block;
+    font-size: 0.68rem;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 0.6;
+    margin-top: 0.3rem;
+}
+
+.paso-sep {
+    border: none;
+    border-top: 1px dashed var(--color-iluminado-bus);
+    margin: 1.5rem 0;
 }
