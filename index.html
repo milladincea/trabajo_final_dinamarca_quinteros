@@ -28,7 +28,6 @@
         </nav>
 
         <!-- Encabezado -->
-        
         <header>
             <img src="encabezado.webp" /> <!-- Reemplazar Imagen -->
             <h3>Electivos de Diseño FAU</h3>
@@ -43,37 +42,46 @@
         <main id="contenedor">
             <!-- Párrafo introductorio/ Copiar y pegar formato si es necesario para explicar más cosas-->
             <p>
-               Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, nulla hac nec pulvinar accumsan potenti eget, cubilia venenatis condimentum dictumst tristique ligula placerat. Maecenas nulla pulvinar lectus phasellus lacus sociosqu blandit habitant, vulputate torquent commodo turpis vivamus magnis dui. Interdum sollicitudin duis ut nostra himenaeos egestas, suscipit fermentum fames eget ornare urna, fusce maecenas blandit gravida ad.
+                La carrera de Diseño de la Universidad de Chile se estructura en tres ciclos formativos: <em>Reconocer para Interpretar</em>, <em>Explorar para Intervenir</em> y <em>Proponer para Transformar</em>. Durante el segundo ciclo (5° a 8° semestre), los estudiantes eligen asignaturas electivas que les permiten profundizar en áreas específicas de la disciplina e incorporar dimensiones humanas, socioculturales, metodológicas, tecnológicas y productivas a sus proyectos, complementando la formación obligatoria mediante enfoques especializados y herramientas que amplían las posibilidades de desarrollo académico y profesional.          
             </p>
-           
+            <p>
+                La oferta de electivos se organiza en tres grandes áreas de integración curricular: <em>Comunicación y Gestión del Diseño</em>, <em>Ciencia y Tecnología</em> y <em>Morfología</em>, mientras que <em>Teoría, Cultura y Crítica</em> se desarrolla mediante asignaturas obligatorias como Métodos Cuantitativos y Cualitativos y Seminario. 
+            </p>
+             <p>
+                A partir de esta estructura, este proyecto analiza cómo se distribuye la oferta de electivos entre las menciones de <em>Industrial y Servicios</em>, <em>Visualidad y Medios</em> y los cursos compartidos por ambas, con el objetivo de identificar desequilibrios, áreas sobrerrepresentadas y posibles vacíos en la continuidad de la formación.            
+            </p>
+        <!---->
+            
             
             <!-- Visualización 1-->
             <h4>
-                Pregunta o Frase
+                ¿Qué áreas de formación concentran una mayor o menor oferta de electivos?
             </h4>
             <!-- Bajada previa al Gráfico 1-->
-            <p>Malesuada aenean cras facilisi taciti lectus aptent dignissim dapibus lacus dictum quam tristique molestie euismod vel, nisl velit tellus fames himenaeos litora nostra pulvinar blandit odio facilisis libero urna vitae. Iaculis vivamus scelerisque in sodales sed netus pretium inceptos platea, commodo eros magnis ultricies nam hendrerit volutpat eu, suspendisse imperdiet litora senectus orci sociosqu mattis nullam.
+            <p>
+                La continuidad formativa depende, en parte, de las oportunidades que ofrece cada área para profundizar conocimientos a través de asignaturas electivas. El siguiente gráfico compara la cantidad total de cursos disponibles en <em>Comunicación y Gestión del Diseño</em>, <em>Ciencia y Tecnología</em> y <em>Morfología</em>, considerando tanto electivos como asignaturas troncales asociadas a cada área.            
             </p>
             <!-- Gráfico 1-->
             <figure>
-                <img src="graficotorta2.svg" alt="Distribución de electivos por mención" />
+                <img src="graficotorta2.svg"/>
                 <figcaption>
-                    Leyenda del gráfico
+                    Este gráfico muestra la distribución total de asignaturas electivas disponibles en 2026, considerando tanto electivos como cursos troncales asociados a cada área de formación. Los colores representan las tres áreas de integración curricular: Comunicación y Gestión del Diseño (rojo), Ciencia y Tecnología (verde) y Morfología (azul).
                 </figcaption>
             </figure>
             <!-- Explicación del gráfico 1-->
             <p>
-                Malesuada aenean cras facilisi taciti lectus aptent dignissim dapibus lacus dictum quam tristique molestie euismod vel, nisl velit tellus fames himenaeos litora nostra pulvinar blandit odio facilisis libero urna vitae. Iaculis vivamus scelerisque in sodales sed netus pretium inceptos platea, commodo eros magnis ultricies nam hendrerit volutpat eu, suspendisse imperdiet litora senectus orci sociosqu mattis nullam.
+                La distribución de la oferta no es homogénea entre las áreas de formación. Mientras <em>Comunicación y Gestión del Diseño</em> cuenta con una presencia predominante en el catálogo de electivos, <em>Morfología</em> aparece como el área con menor respaldo curricular, lo que podría limitar las posibilidades de especialización y continuidad formativa para los estudiantes interesados en este ámbito.            
             </p>
-
+            <!---->
             
             
-             <!-- Visualización 2-->
+             <!-- Visualización 2 y 3-->
             <h4>
-                Pregunta o Frase
+                ¿Cuáles son las áreas con mayor y menor presencia de electivos en cada mención?
             </h4>
-            <!-- Bajada previa al Gráfico 2-->
-            <p>Malesuada aenean cras facilisi taciti lectus aptent dignissim dapibus lacus dictum quam tristique molestie euismod vel, nisl velit tellus fames himenaeos litora nostra pulvinar blandit odio facilisis libero urna vitae. Iaculis vivamus scelerisque in sodales sed netus pretium inceptos platea, commodo eros magnis ultricies nam hendrerit volutpat eu, suspendisse imperdiet litora senectus orci sociosqu mattis nullam.
+            <!-- Bajada previa al Gráfico-->
+            <p>
+                La distribución de electivos no es igual para todas las menciones. Mientras algunas áreas concentran una gran cantidad de cursos disponibles, otras cuentan con una oferta más limitada. Los siguientes gráficos comparan la presencia de cada área de formación dentro de las menciones Industrial y Servicios y Visualidad y Medios, considerando cursos obligatorios, electivos exclusivos de la mención y electivos compartidos entre ambas menciones.             
             </p>
             <!-- Gráfico 2-->
                  <!-- Gráfico IyS-->
@@ -82,44 +90,26 @@
                    <div class="chart-wrap">
                        <canvas id="electivosBarChart"></canvas>
                     </div>
-                    <figcaption>Leyenda del gráfico</figcaption>
+                    <figcaption>Distribución de asignaturas por área de formación en la mención Industrial y Servicios. El gráfico distingue entre cursos obligatorios de la malla curricular (gris), electivos exclusivos de la mención (azul) y electivos compartidos entre ambas menciones (verde). Los cursos obligatorios corresponden a asignaturas troncales cursadas previamente dentro del plan de estudios. </figcaption>
             </figure>
             
-                <!-- Gráfico VyM-->
+                <!-- Gráfico3 VyM-->
             <figure>
                    <div class="chart-wrap">
                     <canvas id="electivosBarChart2"></canvas>
                     </div>
-                    <figcaption>Leyenda del gráfico</figcaption>
+                    <figcaption>Distribución de asignaturas por área de formación en la mención Visualidad y Medios. El gráfico distingue entre cursos obligatorios de la malla curricular (gris), electivos exclusivos de la mención (azul) y electivos compartidos entre ambas menciones (verde). Los cursos obligatorios corresponden a asignaturas troncales cursadas previamente dentro del plan de estudios 
+
+</figcaption>
             </figure>
         </div>
-            <!-- Explicación del gráfico 2-->
+            <!-- Explicación del gráfico 2 y 3-->
             <p>
                 Malesuada aenean cras facilisi taciti lectus aptent dignissim dapibus lacus dictum quam tristique molestie euismod vel, nisl velit tellus fames himenaeos litora nostra pulvinar blandit odio facilisis libero urna vitae. Iaculis vivamus scelerisque in sodales sed netus pretium inceptos platea, commodo eros magnis ultricies nam hendrerit volutpat eu, suspendisse imperdiet litora senectus orci sociosqu mattis nullam.
             </p>
         
             
-            <!-- Visualización 3-->
-            <h4>
-                Pregunta o Frase
-            </h4>
-            <!-- Bajada previa al Gráfico 3-->
-            <p>Malesuada aenean cras facilisi taciti lectus aptent dignissim dapibus lacus dictum quam tristique molestie euismod vel, nisl velit tellus fames himenaeos litora nostra pulvinar blandit odio facilisis libero urna vitae. Iaculis vivamus scelerisque in sodales sed netus pretium inceptos platea, commodo eros magnis ultricies nam hendrerit volutpat eu, suspendisse imperdiet litora senectus orci sociosqu mattis nullam.
-            </p>
-            <!-- Gráfico 3-->
-            <figure>
-                <canvas id="xxx"></canvas>
-                <figcaption>
-                    Leyenda del gráfico
-                </figcaption>
-            </figure>
-            <!-- Explicación del gráfico 3-->
-            <p>
-                Malesuada aenean cras facilisi taciti lectus aptent dignissim dapibus lacus dictum quam tristique molestie euismod vel, nisl velit tellus fames himenaeos litora nostra pulvinar blandit odio facilisis libero urna vitae. Iaculis vivamus scelerisque in sodales sed netus pretium inceptos platea, commodo eros magnis ultricies nam hendrerit volutpat eu, suspendisse imperdiet litora senectus orci sociosqu mattis nullam.
-            </p>
-        
-            
-             <!-- Visualización 4-->
+            <!-- Visualización 4-->
             <h4>
                 Pregunta o Frase
             </h4>
@@ -128,7 +118,7 @@
             </p>
             <!-- Gráfico 4-->
             <figure>
-                <canvas id="xx"></canvas>
+                <img src="grafico_areasvacias.svg"/>
                 <figcaption>
                     Leyenda del gráfico
                 </figcaption>
@@ -147,22 +137,50 @@
             <p>Malesuada aenean cras facilisi taciti lectus aptent dignissim dapibus lacus dictum quam tristique molestie euismod vel, nisl velit tellus fames himenaeos litora nostra pulvinar blandit odio facilisis libero urna vitae. Iaculis vivamus scelerisque in sodales sed netus pretium inceptos platea, commodo eros magnis ultricies nam hendrerit volutpat eu, suspendisse imperdiet litora senectus orci sociosqu mattis nullam.
             </p>
             <!-- Tabla/ Hay que reemplazar los datos--> 
-<div id="contenedordetabla">
-        <input type="text" id="elInput" placeholder="Filtrar proyectos…" />
-         <table>
-                <thead>
-            <tr>
-                <th>N°</th>
-                <th>Titulad@</th>
-                <th>Proyecto</th>
-                <th>Nota</th>
-                <th>Categoría</th>
-                <th>Prof. Guía</th>
-            </tr>
-                </thead>
-        <tbody id="este"></tbody>
-    </table>
-</div>
+            <div id="planificador">
+                <p class="paso-titulo">Planificador</p>
+                <div id="estado-vacio" style="display:none;">Selecciona una mención para comenzar</div>
+                <div class="menciones-btns">
+                    <button class="btn-mencion" data-mencion="V y M">Visualidad y Medios</button>
+                    <button class="btn-mencion" data-mencion="I y S">Industrial y Servicios</button>
+                </div>
+                <div id="contenedor-tabla-plan">
+                    <table id="tabla-plan">
+                        <thead>
+                            <tr id="fila-encabezados">
+                                <th style="width:2.5rem;cursor:default;">Electivos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="fila-troncal" id="fila-troncal">
+                                <td class="celda-fija">Troncal</td>
+                            </tr>
+                            <tr class="fila-electivo" id="fila-e1">
+                                <td class="celda-fija">Opcional</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <p id="instruccion-paso2">Usa el botón <strong>+ Agregar</strong> en el buscador. Arrastra los encabezados para reordenar.</p>
+
+            <input type="text" id="elInput" placeholder="Buscar por área, asignatura o mención…" />
+
+            <div id="contenedordetabla">
+                <table id="tabla-buscador">
+                    <thead>
+                        <tr>
+                            <th>Mención</th>
+                            <th>Área de Formación</th>
+                            <th>Asignatura Electiva</th>
+                            <th>Enfoque</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="este"></tbody>
+                </table>
+            </div>
             <!-- Mini explicación tabla-->
             <H6>
                 Malesuada aenean cras facilisi taciti lectus aptent dignissim dapibus lacus dictum quam tristique molestie euismod vel, nisl velit tellus fames himenaeos litora nostra pulvinar blandit odio facilisis libero urna vitae. Iaculis vivamus scelerisque in sodales sed netus pretium inceptos platea, commodo eros magnis ultricies nam hendrerit volutpat eu, suspendisse imperdiet litora senectus orci sociosqu mattis nullam.
