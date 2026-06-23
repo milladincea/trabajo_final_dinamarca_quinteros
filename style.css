@@ -202,8 +202,10 @@ em {
     font-style: normal;
 }
 
-h4 + p {
-    margin: 0.6rem -6rem 1.2rem;
+
+h4 + p.normal {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 h5 + p {
@@ -328,7 +330,7 @@ a:hover {
 }
 
 div#contenedor {
-    margin: 1rem auto;
+    margin: 1.2rem 0;
     width: 90%;
     max-width: 980px;
 }
