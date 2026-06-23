@@ -311,7 +311,7 @@ figure img {
 }
 
 body {
-    font-family: var(--fuente);
+    font-family: var(--sans);
     color: var(--color-normal);
     text-align: center;
     font-size: 100%;
