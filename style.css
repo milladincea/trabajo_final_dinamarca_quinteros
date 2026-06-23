@@ -7,13 +7,11 @@
 }
 
 :root {
-    /* Colores */
     --bg: #fefefe;
     --color-text: rgb(64, 64, 64);
     --color-muted: rgb(102, 102, 102);
     --accent: #e8571a;
     --border: silver;
-    /* Tipografía */
     --serif: "Spectral", serif;
     --sans: "Georama", sans-serif;
 }
