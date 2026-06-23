@@ -285,7 +285,11 @@ figure img {
     display: block;
 }
 
-
+figure object {
+    width: 100%;
+    min-height: 400px;
+    display: block;
+}
 :root {
     --color-oscuro-bus: ##000000;
     --color-iluminado-bus: #1FA675;
