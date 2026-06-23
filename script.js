@@ -1,8 +1,3 @@
-// ── Gráfico 1 ─────────────
-    // ── IMAGEN SVG EN HTML ─────────────
-
-// ── Gráfico 2 ─────────────
-// ── Electivos IyS ─────────────
 (function () {
     const ctx = document.getElementById('electivosBarChart');
     const labels = ['Comunicación y Estrategia', 'Ciencia y Tecnología', 'Morfología y Técnica'];
@@ -51,7 +46,6 @@
     });
 })();
 
-// ── Electivos VyM ─────────────
 (function () {
     const ctx = document.getElementById('electivosBarChart2');
     const labels = ['Comunicación y Estrategia', 'Ciencia y Tecnología', 'Morfología y Técnica'];
@@ -98,13 +92,7 @@
         }
     });
 })();
-// ── Gráfico 3 ─────────────
 
-
-// ── Gráfico 4 ─────────────
-
-
-// ── Tabla dinámica con buscador ───────────────────────────────────────
 const TRONCALES = {
     "V y M": [
         "Diseño editorial y publicación",
@@ -132,9 +120,9 @@ const TRONCALES_AREA = {
 };
 
 
-let mencionActiva   = null;    // "V y M" | "I y S" | "Ambas" | null
-let columnas        = [];      // orden de índices 0,1,2
-let electivos       = [null, null, null]; // hasta 3 electivos elegidos {mencion,area,electivo,enfoque}
+let mencionActiva   = null;  
+let columnas        = [];     
+let electivos       = [null, null, null];
 let dragSrcIdx      = null;
 
 
@@ -207,7 +195,7 @@ document.querySelectorAll(".btn-mencion").forEach(btn => {
         document.querySelectorAll(".btn-mencion").forEach(b => b.classList.remove("activo"));
         this.classList.add("activo");
 
-        // Resetear electivos al cambiar mención
+
         electivos = [null, null, null];
         columnas  = [0, 1, 2];
 
