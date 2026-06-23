@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 770 620">
+  <!-- Generator: Adobe Illustrator 30.3.0, SVG Export Plug-In . SVG Version: 2.1.3 Build 182)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #3266ad;
+      }
+
+      .st0, .st1, .st2 {
+        stroke: #fff;
+      }
+
+      .st3 {
+        font-family: Arial-Black, Arial;
+        font-size: 30px;
+        font-weight: 800;
+      }
+
+      .st3, .st4 {
+        isolation: isolate;
+      }
+
+      .st3, .st5 {
+        fill: #fff;
+      }
+
+      .st4 {
+        font-family: ArialMT, Arial;
+        font-size: 18px;
+      }
+
+      .st1 {
+        fill: #1d9e75;
+      }
+
+      .st2 {
+        fill: #ad4032;
+      }
+    </style>
+  </defs>
+  <g id="Capa_2">
+    <rect id="background" class="st5" y="0" width="770" height="620"/>
+  </g>
+  <g id="Capa_3">
+    <g id="viz">
+      <g id="pie">
+        <path class="st1" d="M385.02,17.48c161.54,0,292.5,130.96,292.5,292.5,0,15.02-1.16,30.02-3.46,44.86l-98.82-15.34c16.31-105.06-55.64-203.44-160.7-219.75-9.77-1.52-19.64-2.28-29.52-2.28V17.48Z"/>
+        <path class="st2" d="M674.06,354.84c-24.78,159.63-174.27,268.95-333.9,244.18-159.63-24.78-268.95-174.27-244.18-333.9,1.7-10.98,4.03-21.85,6.97-32.56l96.43,26.47c-28.14,102.52,32.16,208.45,134.68,236.59,102.52,28.14,208.45-32.16,236.59-134.68,1.93-7.05,3.47-14.2,4.59-21.43l98.82,15.34Z"/>
+        <path class="st0" d="M102.95,232.56C137.82,105.53,253.29,17.48,385.02,17.48v100c-86.69,0-162.69,57.95-185.63,141.55l-96.43-26.47Z"/>
+      </g>
+    </g>
+  </g>
+  <g id="Capa_1">
+    <text class="st4" transform="translate(70.47 561.41) scale(.97 1)"><tspan x="0" y="0">Comunicación y</tspan><tspan x="0" y="21.6">Estrategia</tspan></text>
+    <text class="st4" transform="translate(71.34 73.56) scale(.97 1)"><tspan x="0" y="0">Morfología y</tspan><tspan x="0" y="21.6">Técnica</tspan></text>
+    <text class="st3" transform="translate(206.36 160.08) rotate(-36.05) scale(.97 1)"><tspan x="0" y="0">26,7%</tspan></text>
+    <text class="st3" transform="translate(520.46 127.18) rotate(43.14) scale(.97 1)"><tspan x="0" y="0">30,8%</tspan></text>
+    <text class="st3" transform="translate(276.65 537.33) rotate(14.25) scale(.97 1)"><tspan x="0" y="0">42,4%</tspan></text>
+    <text class="st4" transform="translate(619.13 73.56) scale(.97 1)"><tspan x="0" y="0">Ciencia y</tspan><tspan x="0" y="21.6">Tecnología</tspan></text>
+  </g>
+</svg>
