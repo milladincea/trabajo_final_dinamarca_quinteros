@@ -42,13 +42,7 @@
         <main id="contenedor">
             <!-- Párrafo introductorio/ Copiar y pegar formato si es necesario para explicar más cosas-->
             <p>
-                La carrera de Diseño de la Universidad de Chile se estructura en tres ciclos formativos: <em>Reconocer para Interpretar</em>, <em>Explorar para Intervenir</em> y <em>Proponer para Transformar</em>. Durante el segundo ciclo (5° a 8° semestre), los estudiantes eligen asignaturas electivas que les permiten profundizar en áreas específicas de la disciplina e incorporar dimensiones humanas, socioculturales, metodológicas, tecnológicas y productivas a sus proyectos, complementando la formación obligatoria mediante enfoques especializados y herramientas que amplían las posibilidades de desarrollo académico y profesional.          
-            </p>
-            <p>
-                La oferta de electivos se organiza en tres grandes áreas de integración curricular: <em>Comunicación y Gestión del Diseño</em>, <em>Ciencia y Tecnología</em> y <em>Morfología</em>, mientras que <em>Teoría, Cultura y Crítica</em> se desarrolla mediante asignaturas obligatorias como Métodos Cuantitativos y Cualitativos y Seminario. 
-            </p>
-             <p>
-                A partir de esta estructura, este proyecto analiza cómo se distribuye la oferta de electivos entre las menciones de <em>Industrial y Servicios</em>, <em>Visualidad y Medios</em> y los cursos compartidos por ambas, con el objetivo de identificar desequilibrios, áreas sobrerrepresentadas y posibles vacíos en la continuidad de la formación.            
+                La carrera de Diseño UChile organiza su ciclo de especialización en tres grandes áreas de integración curricular: <em>Comunicación y Gestión del Diseño</em>, <em>Ciencia y Tecnología</em> y <em>Morfología</em>. Una cuarta área, <em>Teoría, Cultura y Crítica</em>, se desarrolla sólo mediante asignaturas obligatorias <small>(D.U. Exento N°0053924, arts. 12 y 37</small>). Entre 5° y 8° semestre, los estudiantes eligen electivos para profundizar en estas áreas según su mención: <em>Industrial y Servicios</em> o <em>Visualidad y Medios</em>. Pero la oferta no se distribuye de forma pareja <small>(D.U. Exento N°0053924, arts. 6° y 7°)</small>  
             </p>
         <!---->
             
@@ -59,19 +53,21 @@
             </h4>
             <!-- Bajada previa al Gráfico 1-->
             <p>
-                La continuidad formativa depende, en parte, de las oportunidades que ofrece cada área para profundizar conocimientos a través de asignaturas electivas. El siguiente gráfico compara la cantidad total de cursos disponibles en <em>Comunicación y Gestión del Diseño</em>, <em>Ciencia y Tecnología</em> y <em>Morfología</em>, considerando tanto electivos como asignaturas troncales asociadas a cada área.            
+                Si bien los estudiantes pueden elegir entre distintas asignaturas durante su proceso de especialización, la oferta no se distribuye de manera uniforme entre las áreas de formación. El siguiente gráfico permite identificar cuáles concentran una mayor cantidad de cursos y cuáles cuentan con una presencia más limitada dentro de la malla curricular.            
             </p>
             <!-- Gráfico 1-->
             <figure>
                 <img src="graficotorta2.svg"/>
                 <figcaption>
-                    Este gráfico muestra la distribución total de asignaturas electivas disponibles en 2026, considerando tanto electivos como cursos troncales asociados a cada área de formación. Los colores representan las tres áreas de integración curricular: Comunicación y Gestión del Diseño (rojo), Ciencia y Tecnología (verde) y Morfología (azul).
+                    <em>Este gráfico muestra la distribución total de asignaturas electivas disponibles en 2026, considerando tanto electivos como cursos troncales asociados a cada área de formación</em>. Los colores representan las tres áreas de integración curricular: Comunicación y Gestión del Diseño (rojo), Ciencia y Tecnología (verde) y Morfología (azul).
                 </figcaption>
             </figure>
             <!-- Explicación del gráfico 1-->
             <p>
-                La distribución de la oferta no es homogénea entre las áreas de formación. Mientras <em>Comunicación y Gestión del Diseño</em> cuenta con una presencia predominante en el catálogo de electivos, <em>Morfología</em> aparece como el área con menor respaldo curricular, lo que podría limitar las posibilidades de especialización y continuidad formativa para los estudiantes interesados en este ámbito.            
+                Los datos muestran una distribución desigual de la oferta académica entre las tres áreas de formación. La oferta de electivos se concentra principalmente en <em>Comunicación y Gestión del Diseño</em>, área que reúne 73 de las 172 asignaturas disponibles (42,4%). En segundo lugar se encuentra <em>Ciencia y Tecnología</em> con 53 cursos (30,8%), mientras que <em>Morfología</em> presenta la menor oferta con 46 asignaturas (26,7%).
             </p>
+            <p>
+                Aunque las diferencias entre áreas no son problemáticas por sí mismas, el gráfico evidencia que las oportunidades de profundización no se distribuyen de forma equivalente. La menor presencia de <em>Morfología</em> es la que plantea más interrogantes: a diferencia de las otras áreas, no está asociada a una mención específica, lo que hace más difícil explicar su subrepresentación como una decisión curricular intencionada.             </p>
             <!---->
             
             
@@ -81,8 +77,7 @@
             </h4>
             <!-- Bajada previa al Gráfico-->
             <p>
-                La distribución de electivos no es igual para todas las menciones. Mientras algunas áreas concentran una gran cantidad de cursos disponibles, otras cuentan con una oferta más limitada. Los siguientes gráficos comparan la presencia de cada área de formación dentro de las menciones Industrial y Servicios y Visualidad y Medios, considerando cursos obligatorios, electivos exclusivos de la mención y electivos compartidos entre ambas menciones.             
-            </p>
+                La distribución global, sin embargo, oculta diferencias importantes. Al observar cada mención por separado —e incluir también los cursos obligatorios previos— aparece un perfil formativo distinto para cada trayectoria.             </p>
             <!-- Gráfico 2-->
                  <!-- Gráfico IyS-->
         <div class="grafico-par">
@@ -90,7 +85,7 @@
                    <div class="chart-wrap">
                        <canvas id="electivosBarChart"></canvas>
                     </div>
-                    <figcaption>Distribución de asignaturas por área de formación en la mención Industrial y Servicios. El gráfico distingue entre cursos obligatorios de la malla curricular (gris), electivos exclusivos de la mención (azul) y electivos compartidos entre ambas menciones (verde). Los cursos obligatorios corresponden a asignaturas troncales cursadas previamente dentro del plan de estudios. </figcaption>
+                <figcaption> <em>Distribución de asignaturas por área de formación en la mención Industrial y Servicios</em>. El gráfico distingue entre cursos obligatorios de la malla curricular (gris), electivos exclusivos de la mención (azul) y electivos compartidos entre ambas menciones (verde). Los cursos obligatorios corresponden a asignaturas troncales cursadas previamente dentro del plan de estudios. </figcaption>
             </figure>
             
                 <!-- Gráfico3 VyM-->
@@ -98,43 +93,65 @@
                    <div class="chart-wrap">
                     <canvas id="electivosBarChart2"></canvas>
                     </div>
-                    <figcaption>Distribución de asignaturas por área de formación en la mención Visualidad y Medios. El gráfico distingue entre cursos obligatorios de la malla curricular (gris), electivos exclusivos de la mención (azul) y electivos compartidos entre ambas menciones (verde). Los cursos obligatorios corresponden a asignaturas troncales cursadas previamente dentro del plan de estudios 
+                <figcaption><em>Distribución de asignaturas por área de formación en la mención Visualidad y Medios</em>. El gráfico distingue entre cursos obligatorios de la malla curricular (gris), electivos exclusivos de la mención (azul) y electivos compartidos entre ambas menciones (verde). Los cursos obligatorios corresponden a asignaturas troncales cursadas previamente dentro del plan de estudios 
 
 </figcaption>
             </figure>
         </div>
             <!-- Explicación del gráfico 2 y 3-->
             <p>
-                Malesuada aenean cras facilisi taciti lectus aptent dignissim dapibus lacus dictum quam tristique molestie euismod vel, nisl velit tellus fames himenaeos litora nostra pulvinar blandit odio facilisis libero urna vitae. Iaculis vivamus scelerisque in sodales sed netus pretium inceptos platea, commodo eros magnis ultricies nam hendrerit volutpat eu, suspendisse imperdiet litora senectus orci sociosqu mattis nullam.
+                Los gráficos muestran que cada mención distribuye su oferta de asignaturas de acuerdo con énfasis formativos distintos. En <em>Industrial y Servicios</em>, la mayor concentración de cursos se encuentra en <em>Ciencia y Tecnología</em>, con 44 electivos, principalmente gracias a una amplia oferta de electivos propios de la mención. En <em>Visualidad y Medios</em>, en cambio, el área predominante es <em>Comunicación y Gestión del Diseño</em>, que reúne 62 electivos entre cursos exclusivos y abiertos a ambas menciones.
+            </p>
+            <p>
+                Estas diferencias responden a los perfiles específicos de cada trayectoria. Mientras <em>Industrial y Servicios</em> profundiza en aspectos tecnológicos y productivos, <em>Visualidad y Medios</em> fortalece competencias vinculadas a la comunicación, la gestión y el desarrollo estratégico de proyectos.            
+            </p>
+            <p>
+                Sin embargo, la comparación también revela un patrón común. En ninguna de las dos menciones <em>Morfología</em> ocupa un lugar predominante dentro de la oferta académica. Su presencia se mantiene relativamente estable, con 32 asignaturas en <em>Industrial y Servicios</em> y 33 en <em>Visualidad y Medios</em>, pero siempre por debajo del área con mayor desarrollo en cada trayectoria.            
             </p>
         
             
             <!-- Visualización 4-->
             <h4>
-                Pregunta o Frase
+                ¿Qué áreas de la malla curricular requieren fortalecimiento para garantizar una adecuada continuidad formativa?
             </h4>
             <!-- Bajada previa al Gráfico 4-->
-            <p>Malesuada aenean cras facilisi taciti lectus aptent dignissim dapibus lacus dictum quam tristique molestie euismod vel, nisl velit tellus fames himenaeos litora nostra pulvinar blandit odio facilisis libero urna vitae. Iaculis vivamus scelerisque in sodales sed netus pretium inceptos platea, commodo eros magnis ultricies nam hendrerit volutpat eu, suspendisse imperdiet litora senectus orci sociosqu mattis nullam.
+            <p>
+                Tener cursos disponibles no es lo mismo que tener continuidad formativa. El siguiente gráfico distingue entre obligatorios, electivos troncales y electivos opcionales para mostrar qué tan sostenida es la trayectoria que cada área puede ofrecer a lo largo de la carrera. (D.U. Exento N°0053924, art. 37)            
             </p>
             <!-- Gráfico 4-->
             <figure>
                 <img src="grafico_areasvacias.svg"/>
                 <figcaption>
-                    Leyenda del gráfico
+                    <em>El gráfico muestra la composición de la oferta académica en las cuatro áreas de integración curricular de Diseño UChile.</em> Cada bloque distingue entre cursos obligatorios de la malla curricular, electivos troncales asociados a una mención y electivos opcionales disponibles durante el ciclo de especialización. La visualización permite observar los distintos niveles de continuidad formativa que ofrece cada área dentro del plan de estudios. 
                 </figcaption>
             </figure>
             <!-- Explicación del gráfico 4-->
             <p>
-                Malesuada aenean cras facilisi taciti lectus aptent dignissim dapibus lacus dictum quam tristique molestie euismod vel, nisl velit tellus fames himenaeos litora nostra pulvinar blandit odio facilisis libero urna vitae. Iaculis vivamus scelerisque in sodales sed netus pretium inceptos platea, commodo eros magnis ultricies nam hendrerit volutpat eu, suspendisse imperdiet litora senectus orci sociosqu mattis nullam.
+                A diferencia de los gráficos anteriores, esta visualización permite observar no solo cuántas asignaturas existen en cada área, sino también cómo se articulan dentro de la trayectoria formativa. Los resultados muestran que la continuidad curricular no se distribuye de manera homogénea entre las distintas áreas de formación.            
             </p>
-        
+            <p>
+                Con cursos obligatorios, electivos troncales de ambas menciones y una amplia oferta opcional, <em>Comunicación y Gestión del Diseño</em> es el área con la trayectoria más consolidada. Esto permite que los estudiantes continúen desarrollando conocimientos en ella a lo largo de distintos momentos de la carrera.            
+            </p>
+            <p>
+                <em>Ciencia y Tecnología</em> también ofrece continuidad, aunque de forma desigual entre las menciones. Mientras <em>Industrial y Servicios</em> cuenta con cursos troncales vinculados al área, <em>Visualidad y Medios</em> no. Como resultado, las oportunidades de profundización dependen, en este caso, de la trayectoria elegida por el estudiante.
+           </p>
+            <p>
+                La situación de <em>Morfología</em> es distinta. Aunque tiene una cantidad considerable de electivos opcionales, carece de asignaturas troncales que den continuidad a los aprendizajes desarrollados previamente. La profundización en esta área entonces depende casi exclusivamente de la elección individual de electivos durante el ciclo de especialización, sin una estructura curricular que la sostenga.            
+            </p>
+            <p>
+                El caso más extremo es <em>Teoría, Cultura y Crítica</em>. A diferencia de las demás áreas , su presencia en la malla se agota en los cursos obligatorios: no hay electivos ni troncales  que permitan continuar o profundizar los contenidos trabajados. La formación en esta área, en términos curriculares, simplemente termina.         
+            </p>
+            <p>
+                En conjunto, los resultados muestran que las áreas no solo difieren en la cantidad de asignaturas disponibles, sino también en las oportunidades de continuidad que ofrecen. Mientras <em>Comunicación y Gestión del Diseño</em> cuenta con una estructura que favorece la profundización progresiva, <em>Morfología</em> y, especialmente, <em>Teoría, Cultura y Crítica</em> presentan vacíos que limitan el desarrollo sostenido de conocimientos dentro del ciclo de especialización.            
+            </p>
             
              <!-- Visualización 5-->
             <h4>
-                Pregunta o Frase
+                Planifica tu trayectoria: electivos disponibles por área de formación
             </h4>
             <!-- Bajada previa a la Tabla-->
-            <p>Malesuada aenean cras facilisi taciti lectus aptent dignissim dapibus lacus dictum quam tristique molestie euismod vel, nisl velit tellus fames himenaeos litora nostra pulvinar blandit odio facilisis libero urna vitae. Iaculis vivamus scelerisque in sodales sed netus pretium inceptos platea, commodo eros magnis ultricies nam hendrerit volutpat eu, suspendisse imperdiet litora senectus orci sociosqu mattis nullam.
+            <p>
+                Conocer la distribución de la oferta es solo el primer paso. Lo que sigue depende de las decisiones de cada estudiante. La siguiente tabla reúne todos los electivos disponibles según área de integración curricular y mención, y permite identificar en qué áreas se está concentrando la propia trayectoria formativa. En un plan de estudios donde la continuidad no está garantizada para todas las áreas, saber dónde se está poniendo el foco puede ser tan importante como saber dónde están los vacíos.            
             </p>
             <!-- Tabla/ Hay que reemplazar los datos--> 
             <div id="planificador">
@@ -181,11 +198,7 @@
                     <tbody id="este"></tbody>
                 </table>
             </div>
-            <!-- Mini explicación tabla-->
-            <H6>
-                Malesuada aenean cras facilisi taciti lectus aptent dignissim dapibus lacus dictum quam tristique molestie euismod vel, nisl velit tellus fames himenaeos litora nostra pulvinar blandit odio facilisis libero urna vitae. Iaculis vivamus scelerisque in sodales sed netus pretium inceptos platea, commodo eros magnis ultricies nam hendrerit volutpat eu, suspendisse imperdiet litora senectus orci sociosqu mattis nullam.
-            </H6>
-        
+           
             <!-- Conclusión -->
             <p>
                 Malesuada aenean cras facilisi taciti lectus aptent dignissim dapibus lacus dictum quam tristique molestie euismod vel, nisl velit tellus fames himenaeos litora nostra pulvinar blandit odio facilisis libero urna vitae. Iaculis vivamus scelerisque in sodales sed netus pretium inceptos platea, commodo eros magnis ultricies nam hendrerit volutpat eu, suspendisse imperdiet litora senectus orci sociosqu mattis nullam.
@@ -196,11 +209,11 @@
             
             <h5>Fuentes</h5>
             <p>
-               <a href="link" target="_blank">
-                    Fuente 1
+               <a href="https://fau.uchile.cl/dam/jcr:3f7b4e53-cea0-48fe-9f31-8e1991e21d29/Dise%EF%BF%BDo_v4.pdf" target="_blank">
+                     Reglamento y Plan de Estudios de la Licenciatura en Diseño (D.U. Exento N°0053924, 20 de diciembre de 2018)
                 </a>,
-                <a href="link" target="_blank">
-                    Fuente 2
+                <a href="https://ucampus.uchile.cl/m/fau_catalogo/mallas?carr_codigo=35#plan04c91dabdbc800d35a2163c04c30b396" target="_blank">
+                    Catálogo de Electivos FAU 2026.
                 </a>,
                 <a href="link" target="_blank">
                     Fuente 3
