@@ -143,7 +143,8 @@ main {
 
 
 h1 {
-    font-weight: 700;
+    font-family: var(--sans);
+    font-weight: 1000;
     font-size: calc(3rem + 0.25vh + 0.5vw);
     letter-spacing: 0.05rem;
     line-height: 1;
@@ -153,9 +154,9 @@ h1 {
 
 h2 {
     font-size: calc(0.9rem + 0.2vh + 0.4vw);
-    font-weight: 300;
+    font-weight: 80;
     letter-spacing: 0.025rem;
-    line-height: 1.4;
+    line-height: 1.1;
     color: var(--color-text);
 }
 
